@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d4aff">
+  <title>Aditya Raj | Personal Website</title>
+  <meta name="description" content="Welcome to Aditya Raj's personal website.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <nav class="nav wrap">
+    <a class="brand" href="#home" aria-label="Aditya Raj home"><span class="brand-mark">A</span> Aditya Raj</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">☾</button>
+  </nav>
+
+  <main>
+
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          <span class="live-dot"></span>
+          WELCOME TO MY WORLD
+        </p>
+
+        <h1>
+          Hello, I'm <span class="gradient-text">Aditya Raj.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I'm passionate about
+          <span id="typedText">learning new things</span><span class="cursor">|</span>
+        </p>
+
+        <p class="intro">
+          I'm a dreamer with a passion for creating, learning, and building
+          something extraordinary. Every day is an opportunity to gain new
+          skills, explore new possibilities, and take one step closer to
+          turning my vision into reality.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#about">
+            Discover My Journey <span aria-hidden="true">↘</span>
+          </a>
+
+          <a class="button secondary" href="#contact">
+            Let's Connect <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="mini-note">
+          <span>✦</span>
+          Dream big. Learn daily. Build relentlessly.
+        </div>
+
+      </div>
+
+      <div class="portrait-card">
+        <div class="portrait-glow"></div>
+
+        <div class="portrait-frame">
+          <img src="Aditya.png" alt="Portrait of Aditya Raj"
+            onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid'">
+
+          <div class="photo-fallback" id="photoFallback">
+            <span>AR</span>
+            <small>Add your photo</small>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-top">
+          ✨ Curious by Nature
+        </div>
+
+        <div class="floating-chip chip-bottom">
+          🚀 One step at a time
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">GET TO KNOW</p>
+        <h2>About <span class="gradient-text">me</span></h2>
+      </div>
+
+      <div class="about-card glass">
+        <div class="about-icon">👋</div>
+
+        <div>
+          <h3>A Vision in the Making</h3>
+
+          <p>
+            Hey, I'm Aditya — a <strong>curious mind</strong>, <strong>creative thinker</strong>, and
+            <strong>kinaesthetic learner</strong> from Bihar. Having completed my 12th grade,
+            I believe the best way to learn is by doing. I enjoy exploring
+            new ideas, experimenting with technology, solving problems,
+            and turning what I learn from tutorials into practical projects.
+            For me, every challenge is a chance to improve, grow, and discover
+            what I'm capable of achieving.
+          </p>
+
+          <p class="muted">
+            My childhood love for gaming sparked a bigger vision: to become
+            an entrepreneur, game developer, and content creator. I'm working
+            toward building skills in programming, game development, website
+            development, digital marketing, and business management. My long-term
+            ambition is to build innovative products, launch my own company,
+            and create a billion-dollar business. Beyond success, I want to
+            establish an institute where people can learn practical skills,
+            explore their potential, and turn their own ideas into reality.
+            I know the journey takes patience and consistent effort, and I'm
+            ready to keep learning, building, and moving forward.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section wrap" id="interests">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT INSPIRES ME</p>
+        <h2>My <span class="gradient-text">Interests</span></h2>
+        <p class="section-description">
+          Exploring ideas, building new skills, and discovering possibilities
+          that bring my vision closer to reality.
+        </p>
+      </div>
+
+      <div class="interest-grid">
+        <article class="interest-card card-purple">
+          <div class="interest-emoji">💻</div>
+          <h3>Programming</h3>
+          <p>
+            Turning ideas into code, building websites, and understanding
+            the technology behind useful digital products.
+          </p>
+        </article>
+
+        <article class="interest-card card-pink">
+          <div class="interest-emoji">🎮</div>
+          <h3>Game Development</h3>
+          <p>
+            Exploring game mechanics, creative worlds, and the process
+            of turning imagination into interactive experiences.
+          </p>
+        </article>
+
+        <article class="interest-card card-mint">
+          <div class="interest-emoji">🚀</div>
+          <h3>Entrepreneurship</h3>
+          <p>
+            Discovering business opportunities, solving real problems,
+            and learning how to build valuable products and startups.
+          </p>
+        </article>
+
+        <article class="interest-card card-purple">
+          <div class="interest-emoji">🎬</div>
+          <h3>Content Creation</h3>
+          <p>
+            Sharing ideas, experimenting with creative formats, and
+            creating content that informs, inspires, and connects.
+          </p>
+        </article>
+
+        <article class="interest-card card-pink">
+          <div class="interest-emoji">📚</div>
+          <h3>Continuous Learning</h3>
+          <p>
+            Learning through tutorials, practical experiments, reading,
+            and applying new knowledge to real-world projects.
+          </p>
+        </article>
+
+        <article class="interest-card card-mint">
+          <div class="interest-emoji">🧠</div>
+          <h3>Personal Growth</h3>
+          <p>
+            Strengthening discipline, creativity, communication, and
+            problem-solving skills to become better every day.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="section wrap" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S BUILD SOMETHING TOGETHER</p>
+
+        <h2>Let's <span class="gradient-text">Connect</span></h2>
+
+        <p class="section-desc">
+          Have an idea? Let's connect and make something amazing together.
+        </p>
+      </div>
+
+      <form class="contact-form glass" id="contactForm">
+        <div class="form-row">
+          <label>
+            Your name
+            <input name="name" type="text" placeholder="What should I call you?" minlength="2" maxlength="80"
+              autocomplete="name" required>
+          </label>
+
+          <label>
+            Email address
+            <input name="email" type="email" placeholder="you@example.com" maxlength="160" autocomplete="email"
+              required>
+          </label>
+        </div>
+
+        <label>
+          Your message
+          <textarea name="message" placeholder="Tell me about your idea, project, or question..." rows="5" minlength="5"
+            maxlength="3000" required></textarea>
+        </label>
+
+        <button class="button primary submit-button" type="submit" id="submitButton">
+          Send a message <span aria-hidden="true">↗</span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite">
+          Every great connection starts with a hello. ✨
+        </p>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-tagline">
+        Learning today. Building tomorrow.
+      </p>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-credit">
+        Made with <span class="heart">♥</span> by <strong>Aditya Raj</strong>
+      </p>
+
+      <p class="footer-copyright">
+        © <span id="year"></span> · All rights reserved.
+      </p>
+
+      <a href="#home" class="back-to-top">
+        Back to top <span>↑</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
